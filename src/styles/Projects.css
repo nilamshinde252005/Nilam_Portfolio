@@ -1,0 +1,175 @@
+/* Projects.css — Black & White / Metallic aesthetic */
+
+/* Heading */
+.h1 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  color: #ffffff; /* strong white heading */
+}
+
+/* grid: responsive auto-fit */
+.projects-grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+/* card: dark metallic base */
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #0b0b0b 0%, #111111 60%, #1b1b1b 100%);
+  color: #eaeaea;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+  overflow: hidden;
+  transition: transform 240ms cubic-bezier(.2,.9,.3,1), box-shadow 240ms ease, border-color 240ms ease;
+}
+
+/* subtle chrome edge */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0) 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0) 25%);
+  mix-blend-mode: overlay;
+}
+
+/* sheen streak pseudo-element (animated on hover) */
+.project-card::before{
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -30%;
+  width: 40%;
+  height: 220%;
+  transform: rotate(-25deg) translateX(-10%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.0) 0%,
+                                       rgba(255,255,255,0.06) 45%,
+                                       rgba(255,255,255,0.12) 50%,
+                                       rgba(255,255,255,0.06) 55%,
+                                       rgba(255,255,255,0.0) 100%);
+  opacity: 0.0;
+  transition: transform 650ms cubic-bezier(.2,.9,.3,1), opacity 450ms ease;
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+/* header row */
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+}
+
+/* Title */
+.project-title {
+  margin: 0;
+  font-size: 1.04rem;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+/* github icon placeholder (keeps spacing) */
+.github-link {
+  color: #ffffff;
+  opacity: 0.85;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 6px;
+  transition: transform 140ms ease, opacity 140ms ease;
+}
+
+/* description */
+.project-desc {
+  margin: 0.25rem 0 0.9rem 0;
+  color: #d6d6d6;
+  line-height: 1.5;
+  font-size: 0.96rem;
+  max-width: 42em;
+}
+
+/* tags: silver metallic pills */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.tag {
+  background: linear-gradient(180deg, #f6f6f6 0%, #dcdcdc 100%);
+  color: #0b0b0b;
+  font-weight: 700;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* hover: lift + sheen glide */
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.75), inset 0 1px 0 rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.project-card:hover::before,
+.project-card:focus-within::before {
+  transform: rotate(-25deg) translateX(240%);
+  opacity: 0.55;
+}
+
+/* smaller screens adjustments */
+@media (max-width: 1024px) {
+  .projects-grid { gap: 1rem; margin-top: 6%; }
+  .project-card { padding: 1.05rem; min-height: 150px; }
+  .project-desc { font-size: 0.95rem; }
+}
+
+/* single column on mobile */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 0.9rem; margin-top: 7%; }
+  .project-card { padding: 0.95rem; border-radius: 10px; }
+  .project-title { font-size: 1rem; }
+  .tag { font-size: 0.78rem; padding: 0.22rem 0.5rem; }
+}
+
+/* tiny phones */
+@media (max-width: 480px) {
+  .h1 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .project-desc { font-size: 0.92rem; }
+}
+
+/* keyboard focus */
+.project-card:focus-within,
+.github-link:focus {
+  outline: 3px solid rgba(255,255,255,0.06);
+  outline-offset: 4px;
+}
+
+/* high-contrast accessible mode tweak */
+@media (prefers-contrast: more) {
+  .project-title { text-shadow: none; color: #fff; }
+  .project-desc { color: #f5f5f5; }
+  .tag { background: #ffffff; color: #000; }
+}

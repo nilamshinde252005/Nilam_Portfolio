@@ -1,0 +1,245 @@
+/* Home.css — Black & White / Metallic hero (no :root vars) */
+
+main {
+  background-color: #0b0b0b;    /* deep black */
+  font-family: "Gill Sans", "Segoe UI", Roboto, sans-serif;
+  font-size: 20px;
+  color: #efefef;               /* near-white body text */
+}
+
+/* Hero GIF with a subtle metallic ring */
+.hero-gif {
+  margin-top: 5%;
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  padding: 6px; /* space for ring */
+  background: linear-gradient(180deg, #2a2a2a 0%, #111 100%);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.75), inset 0 1px 0 rgba(255,255,255,0.02);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle metallic rim around the gif */
+.hero-gif::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 10px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,0.05), rgba(0,0,0,0));
+  mix-blend-mode: overlay;
+}
+
+/* inner image cleanup */
+.hero-gif img,
+.hero-gif > img {
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Container */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: #0b0b0b;
+  color: #efefef;
+  margin-bottom: 6%;
+}
+
+/* Name: metallic gradient text with subtle glow */
+.hero .h1 {
+  font-size: 4.2rem;
+  color: #efefef;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  line-height: 1;
+}
+
+/* silver gradient clipped to text for a chrome look */
+.name-accent {
+  background-image: linear-gradient(90deg, #ffffff 0%, #d9d9d9 40%, #bdbdbd 65%, #8f8f8f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding: 4px 8px;
+  text-shadow: 0 6px 20px rgba(255,255,255,0.03);
+}
+
+/* thin metallic underline */
+.name-accent::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 56%;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(200,200,200,0.85), rgba(120,120,120,0.7));
+  border-radius: 3px;
+  box-shadow: 0 6px 18px rgba(255,255,255,0.03);
+}
+
+/* Subtitle with subtle metallic panel */
+.hero .h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: #dcdcdc; /* light silver */
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Lead paragraph — muted silver tone */
+.hero p.lead {
+  font-size: 1.05rem;
+  max-width: 680px;
+  line-height: 1.6;
+  color: #cfcfcf; /* muted silver text */
+  margin-bottom: 1rem;
+}
+
+/* highlight inline strong/em */
+.hero p.lead strong {
+  color: #ffffff;
+  background: rgba(255,255,255,0.03);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.hero p.lead em {
+  color: #d6d6d6;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Call-to-action button — metallic chrome pill */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f6f6f6 0%, #dcdcdc 40%, #9e9e9e 100%);
+  color: #0b0b0b;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* subtle hover reflection */
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.7), inset 0 6px 14px rgba(255,255,255,0.06);
+}
+
+/* small icon styling inside CTA */
+.cta .cta-icon {
+  font-size: 1.05rem;
+  color: rgba(11,11,11,0.95);
+}
+
+/* optional small silver chips beneath hero for accent */
+.color-chips {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-chips .chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #0b0b0b;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f6f6f6, #dcdcdc);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+/* Callout border for hero content (subtle) */
+.hero .card-accent {
+  margin-top: 18px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+}
+
+/* sheen animation (very subtle) */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.015) 45%, rgba(255,255,255,0.00) 55%, rgba(255,255,255,0.00) 100%);
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: opacity 700ms ease, transform 900ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* reveal sheen on hover of hero area (desktop only) */
+.hero:hover::after {
+  opacity: 1;
+  transform: translateX(30%);
+}
+
+/* Responsive rules preserved and tuned */
+.hero-gif { max-width: 100%; height: auto; }
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .hero { padding: 1.75rem; min-height: 80vh; }
+  .hero-gif { width: 160px; padding: 5px; border-radius: 10px; }
+  .hero .h1 { font-size: 3rem; }
+  .name-accent::after { width: 50%; }
+  .hero .h2 { font-size: 1.45rem; }
+  .hero p.lead { font-size: 1.02rem; max-width: 520px; color: #cfcfcf; }
+  .cta { padding: 0.75rem 1.25rem; gap: 8px; }
+}
+
+/* Tablets / large phones */
+@media (max-width: 768px) {
+  .hero { padding: 1.25rem; min-height: 70vh; margin-bottom: 4%; }
+  .hero-gif { width: 140px; }
+  .hero .h1 { font-size: 2.4rem; line-height: 1.05; }
+  .hero .h2 { font-size: 1.2rem; }
+  .hero p.lead { font-size: 0.98rem; max-width: 420px; }
+  .cta { padding: 0.7rem 1.1rem; border-radius: 8px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero { padding: 1rem; min-height: 60vh; margin-bottom: 4%; }
+  .hero-gif { width: 120px; }
+  .hero .h1 { font-size: 1.8rem; margin-bottom: 0.6rem; }
+  .hero .h2 { font-size: 1.05rem; margin-bottom: 0.6rem; }
+  .hero p.lead { font-size: 0.9rem; max-width: 320px; line-height: 1.45; }
+  .cta { display: block; width: 80%; max-width: 320px; margin: 0.8rem auto 0; padding: 0.9rem 1rem; text-align: center; font-size: 1rem; }
+}
+
+/* ensure long text wraps nicely on any small viewport */
+@media (max-width: 900px) {
+  .hero p, .hero .h2 { word-break: break-word; }
+}
+
+/* accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero:hover::after { transition: none; transform: none; opacity: 0; }
+  .cta, .hero-gif, .name-accent::after { transition: none; }
+}
