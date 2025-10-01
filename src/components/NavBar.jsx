@@ -9,7 +9,7 @@ export default function NavBar() {
 
             {/* Page Links */}
             <ul className="nav-links" style={{ marginLeft: "8%" }}>
-                <div className="logo">Dia</div>
+                <div className="logo">Nilam</div>
                 <li><a href="/Portfolio2/#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experiences">Experiences</a></li>
