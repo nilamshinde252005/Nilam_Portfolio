@@ -1,4 +1,3 @@
-/* Projects.css — Black & White / Metallic aesthetic */
 
 /* Heading */
 .h1 {
@@ -85,19 +84,24 @@
   font-weight: 800;
   letter-spacing: -0.2px;
 }
-
-/* github icon placeholder (keeps spacing) */
-.github-link {
-  color: #ffffff;
-  opacity: 0.85;
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
-  border-radius: 6px;
-  transition: transform 140ms ease, opacity 140ms ease;
+.project-links {
+  display: flex;
+  gap: 10px;
 }
+
+.github-link,
+.live-link {
+  color: var(--ink);
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.github-link:hover,
+.live-link:hover {
+  color: var(--lav); /* or pastel accent */
+  transform: scale(1.15);
+}
+
 
 /* description */
 .project-desc {
