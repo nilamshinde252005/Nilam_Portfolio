@@ -6,7 +6,7 @@ import CarouselImage from "../components/CarouselImage";
 const PROJECTS = [
   {
     id: "p1",
-    title: "nightOut",
+    title: "withYOU",
     description:
       "A full-stack pixel-themed journaling and productivity web app featuring secure JWT authentication, personalized to-do lists, custom daily rules, and an interactive 'Magic Book' gratitude tracker. Designed to promote mindfulness and digital well-being.",
     tags: [
@@ -18,6 +18,7 @@ const PROJECTS = [
       "CORS","Middleware","Postman",
     ],
     github: "https://github.com/nilamshinde252005/withYOU",
+    live:"https://withyou-nnfp.onrender.com/",
   },
  
   {
