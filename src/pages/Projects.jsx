@@ -20,23 +20,7 @@ const PROJECTS = [
     github: "https://github.com/nilamshinde252005/withYOU",
     live:"https://withyou-nnfp.onrender.com/",
   },
-  {
-    id: "p5",
-    title: "Little Travellers London",
-    description:
-      "An interactive educational app for early learners developed in collaboration with Playroom Consultant and the University of Westminster. Focused on gamified learning through storytelling, sticker-based progress tracking, and Montessori-inspired UI design. Features include itinerary creation, flashcards, and parent–child activity recommendations.",
-    tags: [
-      "Swift",
-      "SwiftUI",
-      "Figma",
-      "User Research",
-      "UX Design",
-      "Gamified Learning",
-      "Educational Technology",
-    ],
-    github: "https://github.com/nilamshinde252005/LittleTravellersLondon", // update if needed
-    live: "", // or add link to prototype/demo if available
-  },
+  
  
   {
     id: "p3",
@@ -78,6 +62,23 @@ const PROJECTS = [
     tags: ["React.js", "Vite", "JavaScript"],
     github: "https://github.com/nilamshinde252005/Nilam_Portfolio/",
     live:"https://nilamshinde252005.github.io/Nilam_Portfolio/",
+  },
+  {
+    id: "p5",
+    title: "Little Travellers London",
+    description:
+      "An interactive educational app for early learners developed in collaboration with Playroom Consultant and the University of Westminster. Focused on gamified learning through storytelling, sticker-based progress tracking, and Montessori-inspired UI design. Features include itinerary creation, flashcards, and parent–child activity recommendations.",
+    tags: [
+      "Swift",
+      "SwiftUI",
+      "Figma",
+      "User Research",
+      "UX Design",
+      "Gamified Learning",
+      "Educational Technology",
+    ],
+    github: "https://github.com/nilamshinde252005/LittleTravellersLondon", // update if needed
+    live: "", // or add link to prototype/demo if available
   },
 ];
 
