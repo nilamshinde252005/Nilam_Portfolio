@@ -53,17 +53,7 @@ const PROJECTS = [
     github: "https://github.com/nilamshinde252005/PhotoBooth",
     live: "https://nilamshinde252005.github.io/PhotoBooth/",
   },
-
-   {
-    id: "p2",
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio built with React, Vite, and React Router to showcase my projects, technical skills, and design journey through a clean and responsive interface.",
-    tags: ["React.js", "Vite", "JavaScript"],
-    github: "https://github.com/nilamshinde252005/Nilam_Portfolio/",
-    live:"https://nilamshinde252005.github.io/Nilam_Portfolio/",
-  },
-  {
+{
     id: "p5",
     title: "Little Travellers London",
     description:
@@ -80,6 +70,16 @@ const PROJECTS = [
     github: "https://github.com/nilamshinde252005/LittleTravellersLondon", // update if needed
     live: "", // or add link to prototype/demo if available
   },
+   {
+    id: "p2",
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio built with React, Vite, and React Router to showcase my projects, technical skills, and design journey through a clean and responsive interface.",
+    tags: ["React.js", "Vite", "JavaScript"],
+    github: "https://github.com/nilamshinde252005/Nilam_Portfolio/",
+    live:"https://nilamshinde252005.github.io/Nilam_Portfolio/",
+  },
+  
 ];
 
 export default function Projects() {
