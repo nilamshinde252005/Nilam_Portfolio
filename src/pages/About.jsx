@@ -20,19 +20,58 @@ export default function About() {
                             <p>Here are some technologies I have been working with :</p>
 
                             <div className="languages">
-                                <ul className="ul">
-                                    <p> skills</p>
-                                    <li>React</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>JWT Authentication</li>
-                                    <li>Axios</li><li>CORS</li>
-                                </ul>
+                                  <ul className="ul">
+    <p>Languages</p>
+    <li>JavaScript (ES6+)</li>
+    <li>Swift</li>
+    <li>Python</li>
+    <li>C++</li>
+    <li>SQL</li>
+    <li>HTML5</li>
+    <li>CSS3</li>
+  </ul>
 
-                                <ul className="ul">
-                                    <p> skills</p>
-                                    <li>PHP (basic)</li> <li>Python</li><li>Javascript</li><li>Middleware</li><li>Postman</li>
+  <ul className="ul">
+    <p>Frontend</p>
+    <li>React.js</li>
+    <li>Tailwind CSS</li>
+    <li>Responsive Design</li>
+    <li>Bootstrap (familiar)</li>
+    <li>Next.js (learning)</li>
+  </ul>
 
+  <ul className="ul">
+    <p>Backend</p>
+    <li>Node.js</li>
+    <li>Express.js</li>
+    <li>REST APIs</li>
+    <li>JWT Authentication</li>
+  </ul>
+
+  <ul className="ul">
+    <p>Database</p>
+    <li>PostgreSQL</li>
+    <li>Drizzle ORM</li>
+    <li>JSON</li>
+  </ul>
+
+  <ul className="ul">
+    <p>Tools</p>
+    <li>Git & GitHub</li>
+    <li>Postman</li>
+    <li>VS Code</li>
+    <li>Render</li>
+    <li>Vercel</li>
+  </ul>
+
+  <ul className="ul">
+    <p>Concepts</p>
+    <li>Database Design</li>
+    <li>UI/UX Principles</li>
+    <li>Agile Workflow</li>
+    <li>Testing & Debugging</li>
+    <li>Project Planning</li>
+  </ul>
                                 </ul>
                             </div>
 
