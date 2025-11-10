@@ -62,8 +62,6 @@ export default function About() {
                   <li>JSON</li>
                 </ul>
 
-
-                </ul>
               </div>
             </div>
           </div>
