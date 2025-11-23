@@ -77,11 +77,7 @@ const PROJECTS = [
     tags: [
       "Swift",
       "SwiftUI",
-      "Figma",
-      "User Research",
-      "UX Design",
-      "Gamified Learning",
-      "Educational Technology",
+      
     ],
     github: "https://github.com/nilamshinde252005/LittleTravellersLondon", // update if needed
     live: "", // or add link to prototype/demo if available
