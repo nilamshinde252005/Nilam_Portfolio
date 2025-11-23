@@ -24,7 +24,7 @@ const PROJECTS = [
   {
     id: "p6",
     title: "EventEase",
-    description:"Built a full-stack app for managing university events and ticketed registrations. Implemented JWT auth, student and admin roles, event CRUD, and registration/cancellation flows. React frontend (with Axios interceptor) consumes a Node/Express API backed by PostgreSQL via Drizzle ORM (Neon). Deployed the frontend on Vercel and tested backend endpoints with Postman to ensure a recruiter-ready demo.",
+    description:"Built a full-stack app for managing university events and ticketed registrations. Implemented JWT auth, student and admin roles, event CRUD, and registration/cancellation flows. React frontend (with Axios interceptor) consumes a Node/Express API backed by PostgreSQL via Drizzle ORM (Neon).",
     tags: [
       "React",
       "Node.js",
