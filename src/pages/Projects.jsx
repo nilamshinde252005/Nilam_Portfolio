@@ -21,7 +21,23 @@ const PROJECTS = [
     live:"https://withyou-nnfp.onrender.com/",
   },
   
- 
+  {
+    id: "p6",
+    title: "EventEase",
+    description:"Built a full-stack app for managing university events and ticketed registrations. Implemented JWT auth, student and admin roles, event CRUD, and registration/cancellation flows. React frontend (with Axios interceptor) consumes a Node/Express API backed by PostgreSQL via Drizzle ORM (Neon). Deployed the frontend on Vercel and tested backend endpoints with Postman to ensure a recruiter-ready demo."
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "JWT Authentication",
+      "Axios",
+      "CORS","Middleware","Postman" ,"PostgreSQL","Drizzle ORM",
+    ],
+    github: "https://github.com/nilamshinde252005/EventEase",
+    live:"https://event-ease-lake.vercel.app/login/",
+  },
+  
+  
   {
     id: "p3",
     title: "MatchaMinutes",
