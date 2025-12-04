@@ -34,7 +34,7 @@ const PROJECTS = [
       "CORS","Middleware","Postman" ,"PostgreSQL","Drizzle ORM",
     ],
     github: "https://github.com/nilamshinde252005/EventEase",
-    live:"https://event-ease-lake.vercel.app/login/",
+    live:"https://event-ease-lake.vercel.app",
   },
   
   
